@@ -1,0 +1,37 @@
+<%- include('../partials/header') %>
+
+<div style="background-color: #F5F5F5;">
+    <%- include('../partials/blog-nav') %>
+</div>
+
+<div class="blogs">
+    <div class="blog">
+        <h1 style="text-align: center; padding-top: 1rem;">Our Blog</h1>
+
+        <div class="blog-cards row row-cols-1 row-cols-md-3 g-4">
+            <% blogs.forEach(function(blog){ %> 
+                <a href="/api/blogs/<%= blog._id %>">
+                <div
+                    class="blog-card"
+                    style="
+                        background-image: linear-gradient(
+                            rgba(0, 0, 0, 0.527),
+                            rgba(0, 0, 0, 0.5)
+                        ),
+                        url('<%= blog.image %>');
+                    "
+                >
+                    <div class="card-date"><%- blog.createdAt %> </div>
+                    <div class="card-title">
+                        <%= blog.title %> 
+                    </div>
+                </div>
+            </a>
+            <% }); %>
+            <% if (blogs.length === 0) { %>
+                <div class="no-blogs">
+                    <h1>No blogs yet</h1>
+                </div>
+            <% } %>
+        </div>
+    </div>
