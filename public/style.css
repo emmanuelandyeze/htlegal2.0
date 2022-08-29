@@ -166,7 +166,7 @@
 	width: 25rem;
 	padding: 1rem;
 	box-shadow: 2px 2px 2px 2px #1c1a20;
-	height: 20rem !important;
+	/* height: 20rem !important; */
 }
 
 .card-text h3 {
@@ -388,7 +388,7 @@ a {
 		width: 100%;
 		padding: 1rem;
 		box-shadow: 2px 2px 2px 2px #1c1a20;
-		height: 15rem !important;
+		/* height: 15rem !important; */
 		margin-bottom: 1rem;
 	}
 
