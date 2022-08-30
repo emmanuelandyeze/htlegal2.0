@@ -52,9 +52,9 @@
 			rgba(0, 0, 0, 0.2)
 		),
 		url(/background.png);
-	height: 100vh;
+	/* height: 100vh; */
 	background-size: cover;
-	background-position: center;
+	background-position: top;
 }
 
 .nav-link {
@@ -208,7 +208,7 @@
 .card-title {
 	color: #fff;
 	position: relative;
-	bottom: -10rem;
+	bottom: -6rem;
 	font-size: 1.5rem;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -271,6 +271,18 @@ a {
 	color: #fff;
 	border: none;
 	cursor: pointer;
+}
+
+.carousel {
+	width: 60% !important;
+	margin: 0 auto !important;
+	padding-bottom: 3rem;
+}
+
+.carousel h3 {
+	font-size: 1.5rem;
+	padding-top: 3rem;
+	font-style: italic;
 }
 
 @media only screen and (max-width: 600px) {
@@ -429,7 +441,7 @@ a {
 	.card-title {
 		color: #fff;
 		position: relative;
-		bottom: -14rem;
+		bottom: -10rem;
 		font-size: 1.5rem;
 		font-weight: 700;
 		text-transform: uppercase;
