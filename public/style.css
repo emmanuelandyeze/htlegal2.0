@@ -453,4 +453,16 @@ a {
 		text-transform: uppercase;
 		text-align: center;
 	}
+
+	/* Blog  */
+.blog-post {
+	padding: 2rem 1rem;
+	background-color: #fff;
+}
+
+.blog-image img {
+	height: 20rem;
+	width: 20rem;
+	border-radius: 10px;
+}
 }
